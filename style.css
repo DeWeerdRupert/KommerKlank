@@ -39,7 +39,6 @@ img {
 header {
   grid-column: 1/5;
   grid-row: 1/2;
-  background-color: rgb(99, 99, 99);
 }
 
 nav {
@@ -76,6 +75,7 @@ h1 {
   text-align: center;
   padding: 20px;
   margin-bottom: 20px;
+  display: none;
 }
 
 h3 {
@@ -93,6 +93,14 @@ header h3, nav h3, footer h3 {
 h4 {
   font-family: Pathway;
   font-size: 1.5em;
+  font-weight: 700;
+  margin-bottom: 0.3em;
+  color: black;
+}
+
+h5 {
+  font-family: Pathway;
+  font-size: 1.2em;
   font-weight: 700;
   margin-bottom: 0.3em;
   color: black;
@@ -147,10 +155,27 @@ nav li a:hover {
   background: rgb(88, 88, 88);
 }
 
+
+/* Main Styling */
+
+main .evenementen {
+  background-image: url("img/Brush.png");
+  background-repeat: repeat;
+  background-size: 100px;
+}
+
+
 /* Aside Styling */
 
 aside a {
   color: rgb(88, 88, 88);
+}
+
+aside .Brush {
+  background-image: url("img/Brush.png");
+  background-repeat: repeat;
+  background-size: 100px;
+
 }
 
 
@@ -180,18 +205,23 @@ section article {
   border-left: 2px solid rgb(240, 240, 240);
 }
 
-.artiesten figure, .evenementen figure {
+.artiesten article, .evenementen article, .over article {
+  float: none;
+  width: 100%;
+}
+
+.artiesten figure, .evenementen figure, .over figure {
   width: 48%;
   float: left;
   margin: 1%;
 }
 
-.artiesten img, .evenementen img {
+.artiesten img, .evenementen img, .over img {
   max-width: 100%;
   display: block;
 }
 
-.artiesten section article, .evenementen section article {
+.artiesten section article, .evenementen section article, .over section article {
   float: none;
   padding-left: 0;
   margin-left: 0;
@@ -199,10 +229,24 @@ section article {
 }
 
 /* IMG Styling */
+
+header figure {
+  width: 50%;
+  margin: auto;
+  padding: 20px;
+}
+
 .artiesten figure {
   box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.2);
 }
 
+.evenementen figure, .over figure {
+  float: none;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 20px;
+}
 
 
 /* Footer Styling */
@@ -218,12 +262,12 @@ section article {
 @media (min-width: 800px) {
   /* Grid Styling */
   header {
-    grid-column: 1/4;
+    grid-column: 1/5;
     grid-row: 1/2;
   }
   nav {
     grid-column: 4;
-    grid-row: 1/4;
+    grid-row: 2/4;
   }
   main {
     grid-column: 1/3;
