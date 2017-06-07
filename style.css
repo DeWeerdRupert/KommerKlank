@@ -120,6 +120,15 @@ aside p {
   font-weight: 600;
 }
 
+.webshop p {
+  font-size: 0.7em;
+  margin-bottom: 0.2em;
+}
+
+footer p {
+  text-align: center;
+  color: rgb(222, 222, 222);
+}
 
 /* Header Styling */
 
@@ -188,7 +197,7 @@ section {
   overflow: auto;
 }
 
-.nieuws section:hover {
+.nieuws section:hover, .webshop section:hover {
    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.2);
 }
 
