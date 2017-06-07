@@ -197,7 +197,7 @@ section {
   overflow: auto;
 }
 
-.nieuws section:hover, .webshop section:hover {
+.nieuws section:hover, .webshop section:hover, .kar:hover {
    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.2);
 }
 
@@ -255,6 +255,14 @@ header figure {
   margin: 0;
   padding: 0;
   margin-bottom: 20px;
+}
+
+.kar {
+  display: block;
+  width: 30px;
+  float: right;
+  margin-right: 20px;
+  margin-top: 20px;
 }
 
 
